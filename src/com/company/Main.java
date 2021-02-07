@@ -13,7 +13,10 @@ public class Main {
         //z21();
         //z22();
         //z23();
-        z24();
+        //z24();
+        //z25();
+        //z26();
+        z28();
     }
     public static void printAreaRound() {
         Scanner scanner = new Scanner(System.in);
@@ -199,6 +202,79 @@ public class Main {
 
         System.out.println(max + " jest największą liczbą");
         System.out.println(min + " jest najmniejszą liczbą");
-
     }
+    public static void z25() {
+        Scanner scanner = new Scanner(System.in);
+        int rok = scanner.nextInt();
+
+        if(rok % 400 == 0 || rok % 4 == 0)
+        {
+            System.out.println(rok + " rok jest przestępny");
+        }
+        else
+        {
+            System.out.println(rok + " rok jest nieprzestępny");
+        }
+    }
+    public static void z26() {
+        Scanner scanner = new Scanner(System.in);
+        int miesiac = scanner.nextInt();
+
+        switch(miesiac) {
+            case 1:
+                System.out.println(miesiac + " miesiąc to jest Styczeń");
+                break;
+            case 2:
+                System.out.println(miesiac + " miesiąc to jest Luty");
+                break;
+            case 3:
+                System.out.println(miesiac + " miesiąc to jest Marzec");
+                break;
+            case 4:
+                System.out.println(miesiac + " miesiąc to jest Kwiecień");
+                break;
+            case 5:
+                System.out.println(miesiac + " miesiąc to jest Maj");
+                break;
+            case 6:
+                System.out.println(miesiac + " miesiąc to jest Czerwiec");
+                break;
+            case 7:
+                System.out.println(miesiac + " miesiąc to jest Lipiec");
+                break;
+            case 8:
+                System.out.println(miesiac + " miesiąc to jest Sierpień");
+                break;
+            case 9:
+                System.out.println(miesiac + " miesiąc to jest Wrzesień");
+                break;
+            case 10:
+                System.out.println(miesiac + " miesiąc to jest Październik");
+                break;
+            case 11:
+                System.out.println(miesiac + " miesiąc to jest Listopad");
+                break;
+            case 12:
+                System.out.println(miesiac + " miesiąc to jest Grudzień");
+                break;
+            default:
+                System.out.println("Od 1 do 12");
+        }
+    }
+    public static void z28() {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int c = scanner.nextInt();
+
+        if(a+b > c && a+c > b && b+c > a)
+        {
+            System.out.println("Można zbudować trójkąt");
+        }
+        else
+        {
+            System.out.println("Nie można zbudować trójkąt");
+        }
+    }
+
 }
