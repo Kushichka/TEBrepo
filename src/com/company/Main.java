@@ -13,7 +13,7 @@ public class Main {
         //z21();
         //z22();
         //z23();
-        //z24();
+        z24();
     }
     public static void printAreaRound() {
         Scanner scanner = new Scanner(System.in);
@@ -149,15 +149,56 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         int b = scanner.nextInt();
+        int c = scanner.nextInt();
+        int d = scanner.nextInt();
+        int e = scanner.nextInt();
+        int max;
+        int min;
 
-        int iloraz = a%b;
-        if(iloraz > 0)
+        if(a>b && a>c && a>d && a>e)
         {
-            System.out.println("Licba lest nieparzysta");
+            max = a;
+        }
+        else if(b>a && b>c && b>d && b>e)
+        {
+            max = b;
+        }
+        else if(c>a && c>b && c>d && c>e)
+        {
+            max = c;
+        }
+        else if(d>a && d>b && d>c && d>e)
+        {
+            max = d;
         }
         else
         {
-            System.out.println("Licba lest parzysta");
+            max = e;
         }
+
+        if(a<b && a<c && a<d && a<e)
+        {
+            min = a;
+        }
+        else if(b<a && b<c && b<d && b<e)
+        {
+            min = b;
+        }
+        else if(c<a && c<b && c<d && c<e)
+        {
+            min = c;
+        }
+        else if(d<a && d<b && d<c && d<e)
+        {
+            min = d;
+        }
+        else
+        {
+            min = e;
+        }
+
+        System.out.println(max + " jest największą liczbą");
+        System.out.println(min + " jest najmniejszą liczbą");
+
     }
 }
